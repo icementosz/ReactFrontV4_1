@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.ContainnerMedHis{
+    width: 100%;
+    min-width: 300px;
+    margin-top: 36px;
+    display: flex;
+    gap: 10px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.ContainnerMedHis .MedHisMenu{
+    background: red;
+    width: 240px;
+}
+
+.ContainnerMedHis .MedHisDetail{
+    background:white;
+    width: 900px; 
+    height: 500px;
+    min-width: 900px;
+    border-radius: 5px;
+}
+
+.ContainnerMedHis .MedHisMenu .searchboxarea{
+    display: flex;
+    align-items: center;
+    background: forestgreen;
+
+}
+
+.ContainnerMedHis .MedHisMenu .searchboxarea .searchbox{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.ContainnerMedHis .MedHisMenu .searchboxarea .searchbox .search-input{
+    font-size: 14px;
+    margin-left: 10px;
+    outline:none;
+    border: none;
+    /* background: green; */
+    flex: 1;
+}
+
+.ContainnerMedHis .MedHisMenu .HistoryList{
+
+}
+
+.ContainnerMedHis .MedHisMenu .HistoryList .boxlist{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.ContainnerMedHis .MedHisMenu .HistoryList .boxlist .text{
+    margin-left: 10px;
+}
+
+.ContainnerMedHis .MedHisMenu .HistoryList .boxlist .fa-solid{
+    margin-right: 10px;
+}
+
+
+@media screen and (max-width: 900px) {
+    .ContainnerMedHis .MedHisMenu{
+        width: 100%;
+    }
+    .ContainnerMedHis .MedHisDetail{
+        display: none;
+    }
+    .ContainnerMedHis .MedHisMenu .HistoryList .boxlist .fa-solid{
+        transform: rotate(90deg);
+    }
+}
